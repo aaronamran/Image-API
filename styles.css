@@ -29,11 +29,16 @@ header {
 
 .nav h2 {
     font-size: 2rem;
+    display: inline-block; 
+    vertical-align: middle; 
+    margin-right: 20px;
 }
 
 .search-box {
+    margin: 30px 0 0 0;
     position: relative;
     width: 350px;
+    display: inline-block;
 }
 
 .search-box input {
@@ -44,11 +49,11 @@ header {
     border-radius: 25px;
     outline: none;
     border: 1px solid lightgray;
-    -webkit-transition: all 0.30s ease-in-out;
+    /* -webkit-transition: all 0.30s ease-in-out;
     -moz-transition: all 0.30s ease-in-out;
     -ms-transition: all 0.30s ease-in-out;
     -o-transition: all 0.30s ease-in-out;
-    transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out; */
 }
 
 input:focus {
@@ -61,11 +66,12 @@ input:focus {
     position: absolute;
     top: 25%;
     right: 4%;
-    transition: 1.5s;
+    margin-top: -5px;
 }
 
 .search-box i:hover {
     color: orange;
+
 }
 
 .grid {
@@ -85,6 +91,24 @@ input:focus {
     border-radius: 2px;
 }
 
+.img:hover {
+    cursor: pointer;
+}
+
+.unsplash-div h4 {
+    margin-left: 20px;
+    display: inline;
+    font-size: 1.5rem;
+    display: inline-block; 
+    vertical-align: middle; 
+    color: black;
+}
+
+.unsplash-div i {
+    color: black;
+    font-size: 1.5rem;
+}
+
 @media(max-width:768px) {
     .img {
         width: 100%;
@@ -96,6 +120,10 @@ input:focus {
 
     .nav h2 {
         padding: 5px 0;
+    }
+
+    .search-box i {
+        margin: 0;
     }
 }
 
@@ -112,5 +140,9 @@ input:focus {
 
     .search-box input {
         font-size: 0.7rem;
+    }
+
+    .search-box i {
+        margin: 0;
     }
 }
